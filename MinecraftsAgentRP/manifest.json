@@ -1,0 +1,18 @@
+{
+   "format_version": 2,
+   "header": {
+      "description": "This changes the NPC UI to work better with the Agent",
+      "name": "Minecrafts Agent by MRBBATES1",
+      "uuid": "858fcc8c-c385-4209-b4f8-ce70d21cf96d",
+      "version": [ 0, 0, 1 ],
+	  "min_engine_version": [ 1, 17, 20 ]
+   },
+   "modules" : [
+      {
+         "description" : "This changes the NPC UI to work better with the Agent",
+         "type": "resources",
+         "uuid": "c8e6c45e-ac2b-47ee-a812-96f5e34fbfc2",
+         "version": [ 0, 0, 1 ]
+      }
+   ]
+}
