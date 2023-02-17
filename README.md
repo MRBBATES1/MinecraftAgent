@@ -1,6 +1,6 @@
 # MinecraftAgent
 
-__Version:__ 1.16+
+__Version:__ 1.17.20+
 
 __By:__ MRBBATES1
 
