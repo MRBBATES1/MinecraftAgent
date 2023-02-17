@@ -1,6 +1,6 @@
 # MinecraftAgent
 
-__Version:__ 1.17.20+
+__Version:__ 1.17.20 to 1.19.10
 
 __By:__ MRBBATES1
 
@@ -34,13 +34,15 @@ agent getitemspace [int:slotNum]
 agent getitemdetail [int:slotNum]
 ```
 
-**Please note** that the execute command has changed, so for example the original command to spawn an agent:
+**Please note** If you wish to use on a version higher than 1.19.10 then you will need to change the execute command as this has changed, so for example the original dialogue file, the command used to spawn an agent:
 
 ```/execute @initiator ~ ~ ~ agent create```
 
 should be changed to:
 
 ```/execute as @initiator run agent create```
+
+Do this for all commands and it should be compatible with version greater than 1.19.10
 
 __Featured In:__
 
