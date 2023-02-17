@@ -1,0 +1,18 @@
+{
+   "format_version": 2,
+   "header": {
+      "description": "Gives you the power to control the agent in Minecraft Bedrock Edition",
+      "name": "Minecrafts Agent by MRBBATES1",
+      "uuid": "23674009-5b34-46a2-ae37-7a0c5c11237d",
+      "version": [ 0, 0, 1 ],
+	  "min_engine_version": [ 1, 17, 20 ]
+   },
+   "modules" : [
+      {
+         "description" : "Gives you the power to control the agent in Minecraft Bedrock Edition",
+         "type": "data",
+         "uuid": "2e7511b1-4760-4f4e-9f66-c2d510e83b71",
+         "version": [ 0, 0, 1 ]
+      }
+   ]
+}

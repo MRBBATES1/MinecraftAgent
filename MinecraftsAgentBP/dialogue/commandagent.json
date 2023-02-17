@@ -1,0 +1,73 @@
+{
+   "format_version": "1.17.20",
+   "minecraft:npc_dialogue": {
+      "scenes": [
+         {
+            "scene_tag": "GetAgent",
+            "npc_name": " ",
+            "text": "Click to spawn in your agent",
+            "buttons": [
+               {
+                  "name": "Get Agent",
+                  "commands": ["dialogue change @s AgentControls_Movement @initiator","execute @initiator ~ ~ ~ agent create","execute @initiator ~ ~ ~ agent tp -36 -62 7","dialogue open @s @initiator AgentControls_Movement"]
+               }
+            ]
+         },
+         {
+            "scene_tag": "AgentControls_Movement",
+            "npc_name": " ",
+            "text": "",
+		 	"buttons": [
+               {
+                  "name": "Left",
+                  "commands": ["execute @initiator ~ ~ ~ agent turn left","dialogue open @s @initiator AgentControls_Movement"]
+               },
+			   {
+			   	  "name": "Right",
+                  "commands": ["execute @initiator ~ ~ ~ agent turn right","dialogue open @s @initiator AgentControls_Movement"]
+			   },
+			   {
+			   	  "name": "Forward",
+                  "commands": ["execute @initiator ~ ~ ~ agent move forward","dialogue open @s @initiator AgentControls_Movement"]
+			   },
+			   {
+			   	  "name": "Place / Destroy",
+                  "commands": ["dialogue open @s @initiator AgentControls_Placement"]
+			   },
+			   {
+			   	  "name": "Reset Game",
+                  "commands": ["execute @initiator ~ ~ ~ agent tp -36 -62 7","dialogue open @s @initiator AgentControls_Movement"]
+			   },
+			   {
+			   	  "name": "End Game",
+                  "commands": ["execute @initiator ~ ~ ~ agent tp ~ -100 ~","dialogue change @s GetAgent @initiator"]
+			   }	
+         	]	
+         },
+         {
+            "scene_tag": "AgentControls_Placement",
+            "npc_name": " ",
+            "text": "",
+		 	"buttons": [
+               {
+                  "name": "Place Block",
+                  "commands": ["execute @initiator ~ ~ ~ agent place 1 forward","dialogue open @s @initiator AgentControls_Placement"]
+               },
+			   {
+			   	  "name": "Destroy Block",
+                  "commands": ["execute @initiator ~ ~ ~ agent destroy forward","dialogue open @s @initiator AgentControls_Placement"]
+			   },
+			   {
+			   	  "name": "Collect Block",
+                  "commands": ["execute @initiator ~ ~ ~ agent collect sand","dialogue open @s @initiator AgentControls_Placement"]
+			   },
+			   {
+			   	  "name": "Movement",
+                  "commands": ["dialogue open @s @initiator AgentControls_Movement"]
+			   }	
+         	]	
+         }
+
+      ]
+   }
+}
